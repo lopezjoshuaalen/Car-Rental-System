@@ -1,18 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
   <head>
-    <title>CarRental | Booking</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>CarRental | Booking</title>
 
+      <!----------------
+            FONTS
+      ----------------->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="fonts/icomoon/style.css">
-    <link rel="icon" href="./images/imperialdrivelogo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
+      <!----------------
+          TAB ICON
+      ----------------->
+    <link rel="icon" href="./images/imperialdrivelogo.png" type="image/x-icon">
 
+      <!----------------
+         BOOTSTRAP CSS
+      ----------------->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
@@ -21,14 +29,19 @@
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
     <link rel="stylesheet" href="css/aos.css">
 
-    <!-- MAIN CSS -->
+      <!----------------
+           MAIN CSS
+      ----------------->
     <link rel="stylesheet" href="css/style.css">
-
   </head>
+
+
 
   <body>
 
-    <!-- MY CSS -->
+      <!----------------
+            MY CSS
+      ----------------->
     <style>
       .site-navbar {
         position: fixed;
@@ -43,6 +56,14 @@
       }
 
       .zoom-out-image:hover {
+        transform: scale(1.05);
+      }
+
+      .zoom-out-image2 {
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .zoom-out-image2:hover {
         transform: scale(1.1);
       }
 
@@ -51,7 +72,7 @@
       }
 
       .zoom-in-image:hover {
-        transform: scale(0.9);
+        transform: scale(0.96);
       }
 
       #scrollBtn {
@@ -76,11 +97,35 @@
         text-align: justify;
       }
 
+      .row-bordered {
+        border: 1px solid #63757E;
+        border-radius: 5px;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
 
+      .row-bordered:hover {
+        background-color:  #f0f0f0;
+        transition: background-color 0.3s; 
+        border: 1px solid #DADADA;
+      }
+
+      .row-bordered:hover .meta {
+        color: #455A66; /* Change this to the color you desire */
+        transition: color 0.3s; /* Smooth transition effect */
+      }
     </style>
     
-    <class="site-wrap" id="home-section">
 
+
+      <!----------------
+        BOOKING SECTION
+      ----------------->
+    <div class="site-wrap" id="home-section">
+
+      <!----------------
+        NAVIGATION BAR
+      ----------------->
       <div class="site-mobile-menu site-navbar-target">
         <div class="site-mobile-menu-header">
           <div class="site-mobile-menu-close mt-3">
@@ -90,13 +135,9 @@
         <div class="site-mobile-menu-body"></div>
       </div>
 
-
-
       <header class="site-navbar site-navbar-target" role="banner">
-
         <div class="container">
           <div class="row align-items-center position-relative">
-
             <div class="col-3">
               <div class="site-logo">
                 <a href="home.html" class="d-flex align-items-center">
@@ -104,11 +145,8 @@
                 </a>
               </div>
             </div>
-
             <div class="col-9  text-right">
-              
               <span class="d-inline-block d-lg-none"><a href="#" class=" site-menu-toggle js-menu-toggle py-5 "><span class="icon-menu h3 text-black"></span></a></span>
-
               <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
                 <ul class="site-menu main-menu js-clone-nav ml-auto ">
                   <li><a href="home.html" class="nav-link zoom-out-image">Home</a></li>
@@ -121,25 +159,23 @@
                 </ul>
               </nav>
             </div>
-
-            
           </div>
         </div>
-
       </header>
 
-      
+
+
+      <!----------------
+          TOP LEVEL
+      ----------------->
       <div class="hero inner-page" style="background-image: url('images/hero_1_a.jpg');">
-        
         <div class="container">
           <div class="row align-items-end ">
             <div class="col-lg-5">
-
               <div class="intro">
                 <h1><strong>Booking</strong></h1>
                 <div class="custom-breadcrumbs"><a href="home.html">Home</a> <span class="mx-2">/</span> <strong>Booking</strong></div>
               </div>
-
             </div>
           </div>
         </div>
@@ -147,13 +183,14 @@
   
 
 
-
-      
+      <!----------------
+         IMPERIALDRIVE
+      ----------------->
       <div class="site-section">
         <div class="container">
           <div class="row">
             <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2">
-              <img src="images/bookingtop.jpg" alt="Image" class="img-fluid rounded zoom-out-image">
+              <img src="images/bookingtop.jpg" alt="Image" class="img-fluid rounded">
             </div>
             <div class="col-lg-5 mr-auto">
               <h2><strong>ImperialDrive</strong></h2>
@@ -164,24 +201,27 @@
           </div>
         </div>
       </div>
+    </div>
 
 
+
+      <!----------------
+        FEATURED CARS
+      ----------------->
     <div class="site-section bg-light">
       <div class="container">
         <div class="row">
           <div class="col-lg-7">
-            <h2 class="section-heading"><strong>Price Table</strong></h2>
+            <h2 class="section-heading"><strong>Featured Cars</strong></h2>
             <p class="mb-5">Showcasing six car options with daily rates, easy picking your car for your adventure.</p>    
           </div>
         </div>
-        
 
         <div class="row">
           <div class="col-md-6 col-lg-4 mb-4">
-
             <div class="listing d-block  align-items-stretch">
               <div class="listing-img h-100 mr-4">
-                <img src="images/car_6.jpg" alt="Image" class="img-fluid zoom-in-image">
+                <img src="images/car_6.jpg" alt="Image" class="img-fluid zoom-out-image">
               </div>
               <div class="listing-contents h-100">
                 <h3>Mitsubishi Pajero</h3>
@@ -206,15 +246,13 @@
                     <p><a href="cars.html" class="btn btn-primary btn-sm">Details</a></p>
                 </div>
               </div>
-
             </div>
           </div>
 
           <div class="col-md-6 col-lg-4 mb-4">
-
             <div class="listing d-block  align-items-stretch">
               <div class="listing-img h-100 mr-4">
-                <img src="images/car_5.jpg" alt="Image" class="img-fluid zoom-in-image">
+                <img src="images/car_5.jpg" alt="Image" class="img-fluid zoom-out-image">
               </div>
               <div class="listing-contents h-100">
                 <h3>Nissan Moco</h3>
@@ -239,16 +277,13 @@
                   <p><a href="cars.html" class="btn btn-primary btn-sm">Details</a></p>
                 </div>
               </div>
-
             </div>
           </div>
-          
 
           <div class="col-md-6 col-lg-4 mb-4">
-
             <div class="listing d-block  align-items-stretch">
               <div class="listing-img h-100 mr-4">
-                <img src="images/car_4.jpg" alt="Image" class="img-fluid zoom-in-image">
+                <img src="images/car_4.jpg" alt="Image" class="img-fluid zoom-out-image">
               </div>
               <div class="listing-contents h-100">
                 <h3>Honda Fitta</h3>
@@ -273,15 +308,13 @@
                   <p><a href="cars.html" class="btn btn-primary btn-sm">Details</a></p>
                 </div>
               </div>
-
             </div>
           </div>
 
           <div class="col-md-6 col-lg-4 mb-4">
-
             <div class="listing d-block  align-items-stretch">
               <div class="listing-img h-100 mr-4">
-                <img src="images/car_3.jpg" alt="Image" class="img-fluid zoom-in-image">
+                <img src="images/car_3.jpg" alt="Image" class="img-fluid zoom-out-image">
               </div>
               <div class="listing-contents h-100">
                 <h3>Skoda Laura</h3>
@@ -306,15 +339,13 @@
                   <p><a href="cars.html" class="btn btn-primary btn-sm">Details</a></p>
                 </div>
               </div>
-
             </div>
           </div>
 
           <div class="col-md-6 col-lg-4 mb-4">
-
             <div class="listing d-block  align-items-stretch">
               <div class="listing-img h-100 mr-4">
-                <img src="images/car_2.jpg" alt="Image" class="img-fluid zoom-in-image">
+                <img src="images/car_2.jpg" alt="Image" class="img-fluid zoom-out-image">
               </div>
               <div class="listing-contents h-100">
                 <h3>Mazda LaPuta</h3>
@@ -339,16 +370,14 @@
                   <p><a href="cars.html" class="btn btn-primary btn-sm">Details</a></p>
                 </div>
               </div>
-
             </div>
           </div>
           
 
           <div class="col-md-6 col-lg-4 mb-4">
-
             <div class="listing d-block  align-items-stretch">
               <div class="listing-img h-100 mr-4">
-                <img src="images/car_1.jpg" alt="Image" class="img-fluid zoom-in-image">
+                <img src="images/car_1.jpg" alt="Image" class="img-fluid zoom-out-image">
               </div>
               <div class="listing-contents h-100">
                 <h3>Buick LaCrosse</h3>
@@ -381,70 +410,117 @@
 
     
 
+      <!----------------
+        PRICING PLANS
+      ----------------->
     <div class="site-section">
-      <div class="container ">
+      <div class="container">
         <div class="row">
-          <div class="col-lg-7 ">
-            <h2 class="section-heading"><strong>Example Computations</strong></h2>
-            <p class="mb-5">Explore sample monthly rates! Our Example Computations provide a quick peek into estimated monthly costs for our cars, helping you plan for longer-term rentals with ease.</p>    
+          <div class="col-lg-12 text-justify">
+            <h2 class="section-heading"><strong>Pricing Plans</strong></h2>
+            <p class="mb-5">At ImperialDrive, we believe in offering flexible and rewarding pricing plans to cater to your varied needs. Our meticulously crafted plans are designed to provide you with exceptional value, ensuring a seamless and cost-effective rental experience. Our logistics officer would gladly assist you with the computation of your car rental, just shoot us a message at +63912 345 6789 or inquiries@idrivelifestyle.com.</p>    
           </div>
         </div>
         <div class="row">
           <div class="col-lg-4 mb-4 mb-lg-0">
-            <div class="testimonial-2 zoom-out-image">
-              <blockquote class="mb-4">
-                <p><strong><strong>Mitsubishi Pajero</strong></strong></p>
-                <p>Monthly Cost = Daily Rate × Number of Days in a Month<br>Let's assume a month has 30 days for this calculation:</p>
+            <div class="testimonial-2 text-center zoom-out-image2">
+              <blockquote class="mb-5">
+                <h2><strong>Essential</strong></h2>
+                <h3>1 Month Rental</h3>
                 <br>
-                <p>Monthly Cost = ₱820.00 × 30 days<br>Monthly Cost = <strong><strong>₱24,600.00</strong></strong></p>
+                <h3 class="mb-0"><strong>5%</strong></h3>
+                <p>Discount from the daily rate</p>
+                <br>
+                <p>• Comprehensive Insurance Included<br>• Basic Maintenance Service</p>
               </blockquote>
-              <div class="d-flex v-card align-items-center">
-                <img src="images/person_1.jpg" alt="Image" class="img-fluid mr-3">
-                <div class="author-name">
-                  <span class="d-block">ImperialDrive</span>
-                  <span>Owner</span>
-                </div>
-              </div>
             </div>
           </div>
           <div class="col-lg-4 mb-4 mb-lg-0">
-            <div class="testimonial-2 zoom-out-image">
-              <blockquote class="mb-4">
-                <p><strong><strong>Nissan Moco</strong></strong></p>
-                <p>Monthly Cost = Daily Rate × Number of Days in a Month<br>Let's assume a month has 30 days for this calculation:</p>
+            <div class="testimonial-2 text-center zoom-out-image2">
+              <blockquote class="mb-5">
+                <h2 style="color: #0056B3;"><strong>Recommended</strong></h2>
+                <h3>6 Month Rental</h3>
                 <br>
-                <p>Monthly Cost = ₱650.00 × 30 days<br>Monthly Cost = <strong><strong>₱19,500.00</strong></strong></p>
+                <h3 class="mb-0" style="color: #0056B3;"><strong>10%</strong></h3>
+                <p>Discount from the daily rate</p>
+                <br>
+                <p>• Comprehensive Insurance<br>• Regular Maintenance Included</p>
               </blockquote>
-              <div class="d-flex v-card align-items-center">
-                <img src="images/person_2.jpg" alt="Image" class="img-fluid mr-3">
-                <div class="author-name">
-                  <span class="d-block">Jean Stanley</span>
-                  <span>Car Lister, Driver</span>
-                </div>
-              </div>
             </div>
           </div>
           <div class="col-lg-4 mb-4 mb-lg-0">
-            <div class="testimonial-2 zoom-out-image">
-              <blockquote class="mb-4">
-                <p><strong><strong>Honda Fitta</strong></strong></p>
-                <p>Monthly Cost = Daily Rate × Number of Days in a Month<br>Let's assume a month has 30 days for this calculation:</p>
+            <div class="testimonial-2 text-center zoom-out-image2">
+              <blockquote class="mb-5">
+                <h2><strong>Pro</strong></h2>
+                <h3>1 Year Rental</h3>
                 <br>
-                <p>Monthly Cost = ₱740.00 × 30 days<br>Monthly Cost = <strong><strong>₱22,200.00</strong></strong></p>
+                <h3 class="mb-0"><strong>15%</strong></h3>
+                <p>Discount from the daily rate</p>
+                <br>
+                <p>• Premium Comprehensive Insurance<br>• Regular Maintenance + Free Check-ups</p>
               </blockquote>
-              <div class="d-flex v-card align-items-center">
-                <img src="images/person_3.jpg" alt="Image" class="img-fluid mr-3">
-                <div class="author-name">
-                  <span class="d-block">Katie Rose</span>
-                  <span>Car Lister, Driver</span>
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
+
+
+      <!----------------
+           EX COMP
+      ----------------->
+    <div class="site-section bg-light">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-2 section-2-title ">
+          <div class="col-md-6">
+            <h2 class="section-heading mb-4"><strong>Example Computations</strong></h2>
+            <p class="mb-5">Explore sample 25 days rates! Our Example Computations provide a quick peek into estimated 25 days costs for our cars, helping you plan for longer-term rentals with ease.</p>    
+          </div>
+        </div>
+        <div class="row align-items-stretch">
+          <div class="col-lg-4 col-md-6 mb-5 ">
+            <div class="post-entry-1 h-100 ">
+            
+              <div class="post-entry-1-contents row-bordered text-center">
+                <span class="meta">Hatchback</span>
+                <h2><strong>Mitsubishi Pajero</strong></h2>
+                <p>25 Days Cost = Daily Rate × Number of Days</p>
+                <p>25 Days Cost = ₱820.00 × 25 days<br>25 Days Cost = <strong><strong>₱24,600.00</strong></strong></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="post-entry-1 h-100">
+              <div class="post-entry-1-contents row-bordered text-center">
+                <span class="meta">Hatchback</span>
+                <h2><strong>Nissan Moco</strong></h2>
+                <p>25 Days Cost = Daily Rate × Number of Days</p>
+                <p>25 Days Cost = ₱650.00 × 25 days<br>25 Days Cost = <strong><strong>₱19,500.00</strong></strong></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="post-entry-1 h-100">
+              <div class="post-entry-1-contents row-bordered text-center">
+                <span class="meta">SUV</span>
+                <h2><strong>Honda Fitta</strong></h2>
+                <p>25 Days Cost = Daily Rate × Number of Days</p>
+                <p>25 Days Cost = ₱740.00 × 25 days<br>25 Days Cost = <strong><strong>₱22,200.00</strong></strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+
+
+      <!----------------
+          RENT SHRTCT
+      ----------------->
     <div class="site-section bg-primary py-5">
       <div class="container">
         <div class="row align-items-center">
@@ -459,7 +535,11 @@
       </div>
     </div>
 
-      
+
+
+      <!----------------
+            FOOTER
+      ----------------->
     <footer class="site-footer">
       <div class="container">
         <div class="row">
@@ -514,10 +594,15 @@
     </footer>
 
     
+
+      <!----------------
+            GO UP
+      ----------------->
     <button onclick="scrollToTop()" id="scrollBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
 
-
-    <!-- MY JS -->
+      <!----------------
+            MY JS
+      ----------------->
     <script>
       function scrollToTop() {
         const scrollDuration = 400; // Duration of the scroll animation in milliseconds
@@ -541,9 +626,13 @@
         }
       };
       </script>
-
     </div>
 
+
+
+      <!----------------
+         BOOTSTRAP JS
+      ----------------->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -556,9 +645,9 @@
     <script src="js/bootstrap-datepicker.min.js"></script>
     <script src="js/aos.js"></script>
 
+      <!----------------
+           MAIN JS
+      ----------------->
     <script src="js/main.js"></script>
-
   </body>
-
 </html>
-
