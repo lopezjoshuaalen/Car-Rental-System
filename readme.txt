@@ -21,7 +21,9 @@ Project Details
         1. HTML
         2. CSS
         3. JS
-        4. Bootstrap
+        4. PHP
+        5. Bootstrap
+        6. MySQL
 
 
 
